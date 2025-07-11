@@ -2,7 +2,10 @@
   "devDependencies": {
     "@types/ink": "^2.0.3",
     "@types/node": "^24.0.13",
-    "@types/react": "^19.1.8",
+    "@types/react": "^19.1.8"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
     "ink": "^6.0.1",
     "react": "^19.1.0"
   },
