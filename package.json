@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "@types/ink": "^2.0.3",
+    "@types/node": "^24.0.13",
+    "@types/react": "^19.1.8",
+    "ink": "^6.0.1",
+    "react": "^19.1.0"
+  },
+  "name": "rose-pairs",
+  "version": "1.0.0",
+  "main": "cli/index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cli": "npx tsx cli"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
