@@ -18,7 +18,7 @@ function App() {
         case Pages.MainMenu:
             return <Menu components={
                 new Map([
-                    ["Play against CPU", Pages.PlayCPU],
+                    // ["Play against CPU", Pages.PlayCPU],
                     ["Play with a friend", Pages.PlayHuman],
                     ["Quit", Pages.Quit],
                 ])
