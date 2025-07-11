@@ -15,6 +15,23 @@ enum TurnState {
     FeedbackNoPair
 }
 
+const nonEmojiFallback: {
+    [key: string]: string
+} = {
+    "👽": "¤ ",
+    "💖": "▒ ",
+    "🐡": "# ",
+    "✈️": "§ ",
+    "👹": "Ø ",
+    "🔋": "♥",
+    "📀": "♣",
+    "💐": "☺",
+    "😾": "♦",
+    "🗿": "⌂ ",
+    "🎈": "♠",
+    "🐙": "╦ "
+}
+
 export function Play({
     againstHuman
 }: PlayProps){
@@ -32,8 +49,10 @@ export function Play({
     const [players, setPlayers] = useState(game.players);
     const [chunks, setChunks] = useState<Card[][]>(getChunks());
     const [turnState, setTurnState] = useState(TurnState.PickingCards);
+    const [nonEmoji, setNonEmoji] = useState(false);
 
     useInput(async (input, key) => {
+        if(key.delete) setNonEmoji(!nonEmoji);
         if(key.return && turnState !== TurnState.FeedbackNoPair){
             if(playerTurn === -1){
                 game.shuffle();
@@ -108,9 +127,11 @@ export function Play({
                         marginX={1}>
                         <Text
                             backgroundColor={playerTurn !== -1 && active ? "green" : ""}
-                            color={playerTurn !== -1 && active ? "black" : ""}
+                            color={playerTurn !== -1 && active ? "black" : "green"}
                         >{
-                            card.flipped ? card.value : (cardIdx+1).toString().padStart(2, "0")
+                            card.flipped ? (
+                                nonEmoji ? nonEmojiFallback[card.value] : card.value
+                            ) : (cardIdx+1).toString().padStart(2, "0")
                         }</Text>
                     </Box>
                 })}
