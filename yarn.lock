@@ -201,6 +201,14 @@ patch-console@^2.0.0:
   resolved "https://registry.yarnpkg.com/patch-console/-/patch-console-2.0.0.tgz#9023f4665840e66f40e9ce774f904a63167433bb"
   integrity sha512-0YNdUceMdaQwoKce1gatDScmMo5pu/tfABfnzEqeG0gtTmd7mh/WcwgUjtAeOU7N8nFFlbQBnFK2gXW5fGvmMA==
 
+react-devtools-core@^6.1.5:
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-6.1.5.tgz#c5eca79209dab853a03b2158c034c5166975feee"
+  integrity sha512-ePrwPfxAnB+7hgnEr8vpKxL9cmnp7F322t8oqcPshbIQQhDKgFDW4tjhF2wjVbdXF9O/nyuy3sQWd9JGpiLPvA==
+  dependencies:
+    shell-quote "^1.6.1"
+    ws "^7"
+
 react-reconciler@^0.32.0:
   version "0.32.0"
   resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.32.0.tgz#a08bcd8c454a4cd839164d6e05926e30a7a7fac2"
@@ -232,6 +240,11 @@ scheduler@^0.26.0:
   version "0.26.0"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.26.0.tgz#4ce8a8c2a2095f13ea11bf9a445be50c555d6337"
   integrity sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==
+
+shell-quote@^1.6.1:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.3.tgz#55e40ef33cf5c689902353a3d8cd1a6725f08b4b"
+  integrity sha512-ObmnIF4hXNg1BqhnHmgbDETF8dLPCggZWBjkQfhZpbszZnYur5DUljTcCHii5LC3J5E0yeO/1LIMyH+UvHQgyw==
 
 signal-exit@^3.0.2, signal-exit@^3.0.7:
   version "3.0.7"
@@ -302,6 +315,11 @@ wrap-ansi@^9.0.0:
     ansi-styles "^6.2.1"
     string-width "^7.0.0"
     strip-ansi "^7.1.0"
+
+ws@^7:
+  version "7.5.10"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.10.tgz#58b5c20dc281633f6c19113f39b349bd8bd558d9"
+  integrity sha512-+dbF1tHwZpXcbOJdVOkzLDxZP1ailvSxM6ZweXTegylPny803bFhA+vqBYw4s31NSAk4S2Qz+AKXK9a4wkdjcQ==
 
 ws@^8.18.0:
   version "8.18.3"
